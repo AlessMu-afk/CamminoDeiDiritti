@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Educazione Civica: Il Sentiero dei Diritti - Murgia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; width: 100%; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-size: 20px;
+      background: url('img/magnacharta.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(11,21,51,0.7);
+      z-index: 0;
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(135deg, #f97316, #fb923c);
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    main p {
+      max-width: 900px;
+      margin: 0 auto 50px auto;
+      font-size: 24px;
+      line-height: 1.6;
+      color: #ffffff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .zoom {
+      display: inline-block;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 3px solid rgba(255,255,255,0.2);
+    }
+
+    .zoom img {
+      width: 350px;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .zoom:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      border-color: #fb923c;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .navlink {
+      font-size: 24px;
+      color: #fb923c;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: all 0.3s;
+    }
+
+    .navlink:hover {
+      background: rgba(251,146,60,0.2);
+      color: #ffffff;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(135deg, #f97316, #fb923c);
+      text-align: center;
+      padding: 25px;
+      font-size: 18px;
+      letter-spacing: 0.7px;
+      margin-top: auto;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .zoom img { width: 280px; height: 200px; }
+      main p { font-size: 20px; }
+      .navlink { font-size: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Educazione Civica: Il Sentiero dei Diritti - Murgia 3BI</h1>
+  </header>
+
+  <main>
+    <p>Scopri come i diritti si sono evoluti nel tempo, dalla Magna Carta alla Dichiarazione Universale dei Diritti Umani.</p>
+
+    <div class="image-container">
+      <a href="magna_carta.html" class="zoom">
+        <img src="img/Magna-Charta-Libertatum-1-2048.jpg" alt="Magna Carta">
+      </a>
+      <a href="dichiarazione_1789.html" class="zoom">
+        <img src="img/0fb1d404-4e06-465f-8f69-6078a2c97540.jpg" alt="Dichiarazione 1789">
+      </a>
+      <a href="dichiarazione_1948.html" class="zoom">
+        <img src="img/rooseveltdeclaration0021.jpg" alt="Dichiarazione 1948">
+      </a>
+    </div>
+
+    <div class="links">
+      <a href="magna_carta.html" class="navlink">Magna Carta</a>
+      <a href="dichiarazione_1789.html" class="navlink">Dichiarazione 1789</a>
+      <a href="dichiarazione_1948.html" class="navlink">Dichiarazione 1948</a>
+    </div>
+  </main>
+
+  <footer>© 2025 Educazione Civica - Il Sentiero dei Diritti</footer>
+</body>
+</html>
