@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Dichiarazione dei Diritti dell’Uomo e del Cittadino - Il Sentiero dei Diritti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
+      background: #1e3a5f; /* blu scuro */
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #f97316, #fb923c);
+      text-align: center;
+      padding: 35px 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      flex: 0 0 auto;
+    }
+
+    header h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      padding: 40px 60px;
+      gap: 40px;
+    }
+
+    .image-side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 25px;
+      padding-right: 20px;
+    }
+
+    .image-slot {
+      width: 750px;
+      max-width: 850px;
+      height: 420px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+      border: 3px solid rgba(255,255,255,0.25);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .image-slot:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    .image-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text-side {
+      flex: 1;
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-content {
+      width: 100%;
+    }
+
+    .text-side h2 {
+      font-size: 32px;
+      color: #fb923c;
+      margin-bottom: 12px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    .text-side p {
+      font-size: 22px;
+      line-height: 1.5;
+      margin-bottom: 18px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+
+    .text-side ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .text-side ul li {
+      font-size: 22px;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+
+    .text-side ul li::before {
+      content: "• ";
+      color: #fb923c;
+      font-weight: bold;
+    }
+
+    .navlink {
+      display: inline-block;
+      margin-top: 35px;
+      font-size: 26px;
+      color: #fb923c;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 10px;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .navlink:hover {
+      background: rgba(251,146,60,0.25);
+      color: #ffffff;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      background: linear-gradient(135deg, #f97316, #fb923c);
+      text-align: center;
+      padding: 22px;
+      font-size: 18px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+      flex: 0 0 auto;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        flex-direction: column;
+        padding: 20px;
+      }
+      header h1 { font-size: 36px; }
+      .text-side h2 { font-size: 26px; }
+      .text-side p, .text-side ul li { font-size: 20px; }
+      .image-slot { height: 250px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Dichiarazione dei Diritti dell’Uomo e del Cittadino (1789)</h1>
+  </header>
+
+  <main>
+    <div class="image-side">
+      <div class="image-slot">
+        <img src="img/Dichiarazione-dei-diritti-umani-in-Francia.png" alt="Dichiarazione dei Diritti 1789">
+      </div>
+      <div class="image-slot">
+        <img src="img/Dirittiuomo.png" alt="Documento originale 1789">
+      </div>
+    </div>
+
+    <div class="text-side">
+      <div class="text-content">
+        <h2>Contesto storico</h2>
+        <p>
+          La <strong>Dichiarazione dei Diritti dell’Uomo e del Cittadino</strong> fu approvata nel 1789 dall’Assemblea Nazionale Francese,
+          nel pieno della Rivoluzione francese. Rappresentò una rottura radicale con il passato monarchico,
+          ponendo le basi per una società fondata sull’uguaglianza, la libertà e la sovranità popolare.
+        </p>
+
+        <h2>Principi fondamentali</h2>
+        <ul>
+          <li>Tutti gli uomini nascono e rimangono liberi e uguali nei diritti.</li>
+          <li>La legge è l’espressione della volontà generale.</li>
+          <li>La sovranità appartiene alla nazione.</li>
+          <li>La libertà consiste nel poter fare tutto ciò che non nuoce agli altri.</li>
+          <li>La proprietà è un diritto inviolabile e sacro.</li>
+        </ul>
+
+        <h2>Differenze rispetto alla Magna Carta</h2>
+        <ul>
+          <li>La Magna Carta (1215) difendeva i diritti della nobiltà; la Dichiarazione del 1789 riguarda tutti i cittadini.</li>
+          <li>Nel 1215 si limitava il potere del re; nel 1789 nasce la sovranità popolare.</li>
+          <li>La Dichiarazione afferma l’uguaglianza di tutti davanti alla legge.</li>
+          <li>Introduce i diritti naturali: libertà, proprietà, sicurezza e resistenza all’oppressione.</li>
+          <li>È ispirata ai principi dell’Illuminismo e ai valori universali.</li>
+        </ul>
+
+        <h2>Significato</h2>
+        <p>
+          Il documento del 1789 segna una svolta epocale nella storia dei diritti umani.
+          Le sue idee ispirarono le costituzioni moderne e prepararono il terreno per la
+          <strong>Dichiarazione Universale dei Diritti Umani</strong> del 1948, che estese questi principi all’intera umanità.
+        </p>
+
+        <a href="index.html" class="navlink">Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Educazione Civica - Il Sentiero dei Diritti
+  </footer>
+</body>
+</html>

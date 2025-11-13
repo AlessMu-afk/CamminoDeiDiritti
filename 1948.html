@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Dichiarazione Universale dei Diritti Umani (1948) - Il Sentiero dei Diritti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
+      background: #0c3b2e; /* verde profondo, simbolo di speranza e pace */
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #f97316, #fb923c);
+      text-align: center;
+      padding: 35px 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      flex: 0 0 auto;
+    }
+
+    header h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      padding: 40px 60px;
+      gap: 40px;
+    }
+
+    .image-side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 25px;
+      padding-right: 20px;
+    }
+
+    .image-slot {
+      width: 750px;
+      max-width: 850px;
+      height: 420px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+      border: 3px solid rgba(255,255,255,0.25);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .image-slot:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    .image-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text-side {
+      flex: 1;
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-content {
+      width: 100%;
+    }
+
+    .text-side h2 {
+      font-size: 32px;
+      color: #fb923c;
+      margin-bottom: 12px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    .text-side p {
+      font-size: 22px;
+      line-height: 1.5;
+      margin-bottom: 18px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+
+    .text-side ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .text-side ul li {
+      font-size: 22px;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+
+    .text-side ul li::before {
+      content: "• ";
+      color: #fb923c;
+      font-weight: bold;
+    }
+
+    .navlink {
+      display: inline-block;
+      margin-top: 35px;
+      font-size: 26px;
+      color: #fb923c;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 10px;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .navlink:hover {
+      background: rgba(251,146,60,0.25);
+      color: #ffffff;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      background: linear-gradient(135deg, #f97316, #fb923c);
+      text-align: center;
+      padding: 22px;
+      font-size: 18px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+      flex: 0 0 auto;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        flex-direction: column;
+        padding: 20px;
+      }
+      header h1 { font-size: 36px; }
+      .text-side h2 { font-size: 26px; }
+      .text-side p, .text-side ul li { font-size: 20px; }
+      .image-slot { height: 250px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Dichiarazione Universale dei Diritti Umani (1948)</h1>
+  </header>
+
+  <main>
+    <div class="image-side">
+      <div class="image-slot">
+        <img src="img/1948.jpg" alt="Eleanor Roosevelt con la Dichiarazione del 1948">
+      </div>
+      <div class="image-slot">
+        <img src="img/Naciones-Unidas-logo-GRD1.jpg" alt="Assemblea ONU 1948">
+      </div>
+    </div>
+
+    <div class="text-side">
+      <div class="text-content">
+        <h2>Contesto storico</h2>
+        <p>
+          La <strong>Dichiarazione Universale dei Diritti Umani</strong> venne adottata il 10 dicembre 1948 
+          dall’Assemblea Generale delle Nazioni Unite a Parigi, dopo gli orrori della Seconda guerra mondiale.  
+          Rappresenta un impegno comune dei popoli del mondo per la tutela della dignità e della libertà di ogni essere umano.
+        </p>
+
+        <h2>Principi fondamentali</h2>
+        <ul>
+          <li>Tutti gli esseri umani nascono liberi ed eguali in dignità e diritti.</li>
+          <li>Ogni persona ha diritto alla vita, alla libertà e alla sicurezza.</li>
+          <li>Nessuno può essere sottoposto a tortura o trattamenti degradanti.</li>
+          <li>Ogni individuo ha diritto alla libertà di pensiero, coscienza e religione.</li>
+          <li>Il diritto all’istruzione e al lavoro dignitoso è universale.</li>
+        </ul>
+
+        <h2>Differenze rispetto alla Dichiarazione del 1789</h2>
+        <ul>
+          <li>La Dichiarazione del 1789 riguardava principalmente i cittadini francesi; quella del 1948 è universale.</li>
+          <li>Nel 1789 si affermavano diritti civili e politici; nel 1948 si aggiungono anche i diritti sociali, economici e culturali.</li>
+          <li>La Dichiarazione del 1948 nasce in un contesto globale e mira alla pace tra le nazioni.</li>
+          <li>Introduce la tutela internazionale dei diritti umani, affidata alle Nazioni Unite.</li>
+          <li>Estende i principi di libertà e uguaglianza a ogni essere umano, senza distinzione di razza, religione o genere.</li>
+        </ul>
+
+        <h2>Significato</h2>
+        <p>
+          La Dichiarazione del 1948 è un pilastro del diritto internazionale dei diritti umani.  
+          È alla base delle costituzioni democratiche moderne e guida l’azione di organismi come l’ONU e l’Unione Europea.  
+          Promuove una visione del mondo fondata su pace, giustizia e solidarietà tra i popoli.
+        </p>
+
+        <a href="index.html" class="navlink">Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Educazione Civica - Il Sentiero dei Diritti
+  </footer>
+</body>
+</html>
